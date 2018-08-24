@@ -1,6 +1,6 @@
 {
-  "name": "@trisquel/loader",
-  "version": "0.1.2",
+  "name": "@triskel/loader",
+  "version": "1.0.0",
   "description": "HTML minifier",
   "main": "loader.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kiltjs/trisquel-loader.git"
+    "url": "git+ssh://git@github.com/triskeljs/loader.git"
   },
   "keywords": [
     "html",
@@ -17,14 +17,14 @@
   "author": "Jesús Germade <jesus@germade.es>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kiltjs/trisquel-loader/issues"
+    "url": "https://github.com/triskeljs/loader/issues"
   },
-  "homepage": "https://github.com/kiltjs/trisquel-loader#readme",
+  "homepage": "https://github.com/triskeljs/loader#readme",
   "devDependencies": {
     "eslint": "5.0.1",
     "mocha": "5.2.0"
   },
   "dependencies": {
-    "@trisquel/parser": "0.1.2"
+    "@triskel/parser": "1.0.0"
   }
 }

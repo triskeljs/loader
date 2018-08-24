@@ -1,7 +1,7 @@
 
 // import { getOptions } from 'loader-utils';
 
-var parseHTML = require('@trisquel/parser'),
+var parseHTML = require('@triskel/parser'),
     _isNotNull = function (o) { return o !== null; };
 
 function _stringify (o, options) {
