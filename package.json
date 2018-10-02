@@ -1,6 +1,6 @@
 {
   "name": "@triskel/loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTML minifier",
   "main": "loader.js",
   "scripts": {
