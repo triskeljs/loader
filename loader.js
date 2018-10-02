@@ -16,10 +16,12 @@ function _stringify (o, options) {
 
     // if( options.remove_comments !== false && o.comments ) return null;
 
-    return '{' + Object.keys(o).map(function (key) {
-      if( key === 'self_closed' ) return '';
-      return ( /^[a-zA-Z_$]+$/.test(key) ? key : ( '\'' + key + '\'' ) ) + ':' + _stringify(o[key], options);
-    }).join(',') + '}';
+    return '{' + Object.keys(o).reduce(function (props, key) {
+      if( key !== 'self_closed' ) {
+        props.push( ( /^[a-zA-Z_$]+$/.test(key) ? key : ( '\'' + key + '\'' ) ) + ':' + _stringify(o[key], options) );
+      }
+      return props;
+    }, []).join(',') + '}';
 
   } else if( o instanceof Function ) {
 
