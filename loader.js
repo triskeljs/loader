@@ -17,6 +17,7 @@ function _stringify (o, options) {
     // if( options.remove_comments !== false && o.comments ) return null;
 
     return '{' + Object.keys(o).map(function (key) {
+      if( key === 'self_closed' ) return '';
       return ( /^[a-zA-Z_$]+$/.test(key) ? key : ( '\'' + key + '\'' ) ) + ':' + _stringify(o[key], options);
     }).join(',') + '}';
 
@@ -52,20 +53,12 @@ function html2js (html, options) {
 
 function loader (html, options) {
   options = Object.create(options || {});
+
   if( options.remove_comments === undefined ) options.remove_comments = true;
-  // const options = getOptions(this);
 
-  // Apply some transformations to the source...
-
-  // var result = 'module.exports = ' + html2js(html, options);
-  //
-  // console.log('\nhtml loader\n', result);
-  //
-  // return result;
   return (options.cjs ? 'module.exports = ' : 'export default ') + html2js(html, options) + ';';
 }
 
 loader.html2js = html2js;
 
-// export default loader;
 module.exports = loader;
