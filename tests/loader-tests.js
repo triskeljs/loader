@@ -9,7 +9,7 @@ describe('loader', function () {
 
     assert.strictEqual( loadHTML(`
 <div id="foobar">foo</div>
-    `), `export default [{attrs:{id:'foobar'},_:['foo'],$:'div'}];` );
+    `), `export default [{attrs:{id:'foobar'},_:'foo',$:'div'}];` );
 
   });
 
