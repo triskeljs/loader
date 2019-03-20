@@ -25,6 +25,7 @@
     "mocha": "5.2.0"
   },
   "dependencies": {
-    "@triskel/parser": "1.1.0"
+    "@triskel/parser": "1.1.0",
+    "json5": "^2.1.0"
   }
 }
