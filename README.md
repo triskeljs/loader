@@ -3,7 +3,6 @@
 
 Triskel HTML loader for [Webpack](https://webpack.js.org/) and [Rollup](https://rollupjs.org/)
 
-[![ᴋɪʟᴛ ᴊs](https://jesus.germade.es/assets/images/badge-kiltjs.svg)](https://github.com/kiltjs)
 [![npm](https://img.shields.io/npm/v/@triskel/loader.svg)](https://www.npmjs.com/package/@triskel/loader)
 [![Build Status](https://travis-ci.org/triskeljs/loader.svg?branch=master)](https://travis-ci.org/triskeljs/loader)
 [![dependencies Status](https://david-dm.org/triskeljs/loader/status.svg)](https://david-dm.org/triskeljs/loader)
