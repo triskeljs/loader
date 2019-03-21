@@ -1,9 +1,9 @@
 
 const triskelLoader = require('./loader')
 
-module.exports = function json() {
+module.exports = function triskel() {
   return {
-    name: 'json',
+    name: 'triskel',
 
     transform(html, filepath) {
       if( filepath.slice(-5) !== '.html' ) return null
