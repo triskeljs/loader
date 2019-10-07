@@ -21,11 +21,12 @@
   },
   "homepage": "https://github.com/triskeljs/loader#readme",
   "devDependencies": {
-    "eslint": "5.13.0",
-    "mocha": "5.2.0"
+    "eslint": "6.5.1",
+    "mocha": "6.2.1"
   },
   "dependencies": {
     "@triskel/parser": "1.1.0",
-    "json5": "^2.1.0"
+    "json5": "2.1.1",
+    "minimatch": "^3.0.4"
   }
 }
